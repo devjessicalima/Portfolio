@@ -174,6 +174,7 @@
       background-color: #f4b0b06d;
     }
 
+    
     #sobre h2 {
   font-size: 2.5rem; /* aumenta o tamanho do título */
   text-align: center;
@@ -182,13 +183,244 @@
 }
 
 #sobre p {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto 1.8rem auto;
   font-size: 1.15rem;
   line-height: 1.8;
   text-align: justify;
   color: #4d4d4d;
   padding: 0 15px;
+}
+
+.projeto-destaque .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .projeto-destaque .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.imagem-projeto {
+  max-width: 100%;
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-projeto {
+  max-width: 600px;
+}
+
+.conteudo-projeto h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.conteudo-projeto p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.botoes a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.botoes a:hover {
+  background-color: #555;
+}
+
+.projeto-destaque .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .projeto-destaque .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.imagem-projeto {
+  max-width: 100%;
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-projeto {
+  max-width: 600px;
+}
+
+.conteudo-projeto h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.conteudo-projeto p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.botoes a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.botoes a:hover {
+  background-color: #555;
+}
+
+#soft-skills h2 {
+  text-align: center;
+  font-size: 2rem; /* Tamanho do texto */
+  color: #333; /* Cor do texto */
+}
+
+
+#certificacoes {
+  padding: 2rem;
+}
+
+#certificacoes h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.certificado {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certificado img {
+  width: 100%;
+  max-width: 300px; /* Limita o tamanho máximo da imagem */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.certificado p {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+#contato {
+  text-align: center;
+  background-color: transparent; /* ou a cor de fundo que você quiser */
+  padding: 50px 20px;
+}
+  
+.contato-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contato-item {
+  font-size: 1.2rem;
+  color: #5b4b47;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.contact-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #5b4b47;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-buttons a:hover {
+  background-color: #c98966;
+}
+
+.contact-buttons i {
+  font-size: 1.2rem;
+}
+
+.download-cv {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c98966;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #a26a4c;
+}
+
+.qr-whatsapp {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qr-whatsapp img {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -236,37 +468,101 @@
     </section>
     
 
-    <section id="projetos">
+    <section id="projetos" class="projeto-destaque">
       <h2>Projetos</h2>
-      <p>.</p>
+      <div class="container">
+        <img src="site.jpg" alt="Projeto Compass" class="imagem-projeto" />
+        <div class="conteudo-projeto">
+          <h3>Compass</h3>
+          <p>
+            Projeto desenvolvido na faculdade, com foco em apresentar uma solução moderna e responsiva. 
+            Fui responsável por todo o design do site e foi nesse projeto que realmente aprendi a programar, 
+            me dedicando ao máximo para entregar um resultado profissional e funcional.
+          </p>
+          <p><strong>Tecnologias utilizadas:</strong> HTML, CSS, JavaScript</p>
+          <div class="botoes">
+            <a href="https://devjessicalima.github.io/website-compass/" target="_blank">🔗 Ver Projeto</a>
+            <a href="https://github.com/devjessicalima/website-compass" target="_blank">💻 Código no GitHub</a>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
-    <section id="softskills">
+    <section id="soft-skills">
       <h2>Soft Skills</h2>
-      <p>.</p>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3>🗣️ Comunicação</h3>
+          <p>Capacidade de explicar ideias complexas de forma simples e de ouvir atentamente as necessidades da equipe e clientes.</p>
+        </div>
+        <div class="skill-item">
+          <h3>🤝 Trabalho em Equipe</h3>
+          <p>Experiência colaborando em projetos multidisciplinares, ajudando a resolver problemas e garantindo uma boa comunicação entre os membros da equipe.</p>
+        </div>
+        <div class="skill-item">
+          <h3>🔧 Resolução de Problemas</h3>
+          <p>Abordagem analítica para encontrar soluções inovadoras e práticas para desafios de programação e design de sistemas.</p>
+        </div>
+        <div class="skill-item">
+          <h3>⏰ Gestão de Tempo</h3>
+          <p>Capacidade de gerenciar múltiplos projetos e prazos, mantendo a produtividade e o foco nas entregas de qualidade.</p>
+        </div>
+        <div class="skill-item">
+          <h3>🔄 Adaptabilidade</h3>
+          <p>Capacidade de aprender novas tecnologias rapidamente e de se adaptar a mudanças de requisitos ou ambientes de trabalho.</p>
+        </div>
+      </div>
     </section>
+    
 
     <section id="certificacoes">
-      <h2>Certificações</h2>
-      <p>.</p>
+      <h2>📜 Certificações</h2>
+      <div class="certificados-grid">
+        <div class="certificado">
+          <img src="01.png" alt="Certificado 1">
+          <p>Certificação em JavaScript Avançado</p>
+        </div>
+        <div class="certificado">
+          <img src="02.png" alt="Certificado 2">
+          <p>Certificação em Conceitor avançados sobre algoritimos e programação com a linguagem Java</p>
+        </div>
+        <div class="certificado">
+          <img src="03.png" alt="Certificado 3">
+          <p>Certificação em programação web avançado</p>
+        </div>
+        <div class="certificado">
+          <img src="04.png" alt="Certificado 4">
+          <p>Certificação em Python</p>
+        </div>
+      </div>
     </section>
+    
 
     <section id="contato">
-      <h2>Contato</h2>
-      <p> dev.jessicalima@gmail.com</p>
-      <p>(11)98868-2562</p>
-
-      <div class="contact-buttons">
-        <a href="https://github.com/devjessicalima" target="_blank">
-          <i class="fab fa-github"></i> Github
-        </a>
-        <a href="https://www.linkedin.com/in/devjessicalima/" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+      <h2>📞 Contatos</h2>
+      <div class="contato-itens">
+        <div class="contato-item">
+          <span>📧</span>
+          <a href="mailto:dev.jessicalima@gmail.com">dev.jessicalima@gmail.com</a>
+        </div>
+        <div class="contact-buttons">
+          <a href="https://github.com/devjessicalima" target="_blank">
+            <i class="fab fa-github"></i> Github
+          </a>
+          <a href="https://www.linkedin.com/in/devjessicalima/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <a class="download-cv" href="cv.pdf" download>Baixar CV</a>
       </div>
-
-      <a class="download-cv" href="CV.pdf" download>Baixar CV</a>
+    
+      <!-- Cantinho para o QR Code do WhatsApp -->
+      <div class="qr-whatsapp">
+        <img src="whatsapp-qr.png" alt="QR Code do WhatsApp" />
+      </div>
     </section>
+    
   </main>
 
   <script>
